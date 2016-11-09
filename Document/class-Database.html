@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Database</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-Cookie.html">Cookie</a></li>
+				<li class="active"><a href="class-Database.html">Database</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-Input.html">Input</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-Token.html">Token</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-Validate.html">Validate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Database</h1>
+
+
+	<div class="description">
+	<p>Lop lam viec voi database
+Tat ca thao tac voi database deu thong qua lop nay</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				trieunv<br>
+			<b>Located at</b> <a href="source-class-Database.html#3-209" title="Go to source code">Database.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			self::$_instance
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Database.html#38-47" title="Go to source code">getInstance</a>( )</code>
+
+		<div class="description short">
+			<p>lay ra $_Instance neu null thi khoi tao</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>lay ra $_Instance neu null thi khoi tao</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					self::$_instance<br>$_instance Luon lay duy nhat 1 ket noi den database
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Database.html">Database</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Database.html#50-76" title="Go to source code">query</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Thuc thi cau lenh sql</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Thuc thi cau lenh sql</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>$sql: cau lenh sql</dd>
+					<dt><var>$params</var></dt>
+					<dd>$params: mang tham so truy van</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Database.html">Database</a></code><br>this Tra ve doi tuong hien tai (self::$_instance)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="action" id="_action">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Database.html">Database</a></code>|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_action">#</a>
+		<code><a href="source-class-Database.html#78-101" title="Go to source code">action</a>( <span>String <var>$action</var></span>, <span>string <var>$table</var></span>, <span>array <var>$where</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Thao tac get, delete goi lai ham nay</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Thao tac get, delete goi lai ham nay</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd>: select | insert | update</dd>
+					<dt><var>$table</var></dt>
+					<dd>: table's name</dd>
+					<dt><var>$where</var></dt>
+					<dd>: sql condition</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Database.html">Database</a></code>|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Database.html">Database</a></code>|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Database.html#103-111" title="Go to source code">get</a>( <span>string <var>$table</var></span>, <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>get</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>get</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>: table name</dd>
+					<dt><var>$where</var></dt>
+					<dd>: $where[0] = field, $where[1] = operator,  $where[2] = value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Database.html">Database</a></code>|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Database.html">Database</a></code>|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Database.html#113-121" title="Go to source code">delete</a>( <span>string <var>$table</var></span>, <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>delete</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>delete</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>: table name</dd>
+					<dt><var>$where</var></dt>
+					<dd>: $where[0] = field, $where[1] = operator,  $where[2] = value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Database.html">Database</a></code>|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Database.html#123-150" title="Go to source code">insert</a>( <span>string <var>$table</var></span>, <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>insert</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>insert</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>: table name</dd>
+					<dt><var>$fields</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Database.html#151-176" title="Go to source code">update</a>( <span>string <var>$table</var></span>, <span>integer <var>$id</var></span>, <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>update</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>update</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>: table name</dd>
+					<dt><var>$id</var></dt>
+					<dd>: user id</dd>
+					<dt><var>$fields</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="results" id="_results">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_results">#</a>
+		<code><a href="source-class-Database.html#178-184" title="Go to source code">results</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>$this->_results
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Database.html#186-192" title="Go to source code">first</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>$this->_results[0]
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-Database.html#194-200" title="Go to source code">error</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>$this->_error
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-Database.html#202-208" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					number<br>count(result)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
